@@ -12,13 +12,14 @@ body {
     display: flex;
 }
 
-.header, .footer {
+.header {
     background-color: #1f2937;
     font-family: "Roboto", "Cambria", Arial, Helvetica, sans-serif;
     color: white;
     display: flex;
     justify-content: space-between;
-    margin: 10px 60px;
+    align-items: center;
+    margin: 20px 60px;
 }
 
 a {
@@ -37,7 +38,15 @@ a {
 #headerlogo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 900;
 }
+
+#rightlinks {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .header2 {
     display: flex;
@@ -51,7 +60,7 @@ a {
     flex-wrap: wrap;
     align-items: flex-start;
     flex: 1;
-    
+    padding: 40px
 }
 
 
@@ -62,14 +71,17 @@ a {
 }
 
 button {
-    background-color: #3882f6;
-    border-radius: 10%;
+    background-color: transparent;
+    border-radius: 0.5cap;
     color: #f9faf8;
-    /* box-shadow: none; */
-    border-style: outset;
-    border-color: #3882f6;
+    box-shadow: none;
+    border: solid 1px #f9faf8;
+    /* border-style: outset; */
+    /* border-color: #3882f6; */
     margin-top: 10px;
-    padding: 3px 7px;
+    padding: 4px 10px;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 .subtext {
@@ -83,3 +95,80 @@ button {
     align-items: center;
 }
 
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainbody {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* border: double #3882f6; */
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.images img {
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #efe7eb;
+    justify-content: center;
+    padding: 80px;
+    margin: 40px;
+    border-radius: 5cap;
+}
+
+.reference {
+    text-align: end;
+}
+
+.signup {
+    background-color: #3882f6;
+    margin: 20px 40px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-radius: 0.5cap;
+}
+
+.signuptext {
+    display: flex;
+    flex-direction: column; 
+    color: #f9faf8;
+}
+
+#join {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer {
+    background-color: #1f2937;
+    font-family: "Roboto", "Cambria", Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+.signbutton {
+    align-self: start;
+}
